@@ -68,61 +68,61 @@ let products = [
   {
     id: 0,
     name: "chicken Grill",
-    image: "../IMGS/food-0.jpg",
+    image: "imgs/food-0.jpg",
     price: 25,
   },
   {
     id: 1,
     name: "Shrimp",
-    image: "../IMGS/food-1.jpg",
+    image: "imgs/food-1.jpg",
     price: 35,
   },
   {
     id: 2,
     name: "Chicken pieces",
-    image: "../IMGS/food-2.jpg",
+    image: "imgs/food-2.jpg",
     price: 30,
   },
   {
     id: 3,
     name: "Small burger",
-    image: "../IMGS/food-3.jpg",
+    image: "imgs/food-3.jpg",
     price: 12,
   },
   {
     id: 4,
     name: "Big burger",
-    image: "../IMGS/food-4.jpg",
+    image: "imgs/food-4.jpg",
     price: 22,
   },
   {
     id: 5,
     name: "Seafood salad",
-    image: "../IMGS/food-5.jpg",
+    image: "imgs/food-5.jpg",
     price: 40,
   },
   {
     id: 6,
     name: "Vegetable salad",
-    image: "../IMGS/food-6.jpg",
+    image: "imgs/food-6.jpg",
     price: 20,
   },
   {
     id: 7,
     name: "Eggs with rice",
-    image: "../IMGS/food-7.jpg",
+    image: "imgs/food-7.jpg",
     price: 18,
   },
   {
     id: 8,
     name: "Eggs & meat",
-    image: "../IMGS/food-8.jpg",
+    image: "imgs/food-8.jpg",
     price: 40,
   },
   {
     id: 9,
     name: "Cheese pizza",
-    image: "../IMGS/food-9.jpg",
+    image: "imgs/food-9.jpg",
     price: 28,
   },
 ];
@@ -139,7 +139,7 @@ function getProducts() {
     ulCards.className = "carousel";
     liCards.className = "card";
     liCards.innerHTML = `
-    <div class= "image"><img src="IMGS/${value.image}"/></div>
+    <div class= "image"><img src="${value.image}"/></div>
     <div class= "info">
       <div class="price">$${value.price}</div>
       <div class="sub-info">
@@ -175,7 +175,7 @@ function reloadCard() {
     if (value != null) {
       let liCarts = document.createElement("li");
       liCarts.innerHTML = `
-      <div><img src="IMGS/${value.image}"/></div>
+      <div><img src="${value.image}"/></div>
       <div>${value.name}</div>
       <div>$${value.price}</div>
       <div>${value.quantity}</div>
